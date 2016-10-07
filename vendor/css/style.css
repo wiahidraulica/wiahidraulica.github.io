@@ -48,8 +48,12 @@ footer {
 
 }
 
-section {
-    background: #619193;;
+.contextS {
+    background: #001744;;
+}
+
+.contextN .contexto {
+    background: #001744; color: white;
 }
 
 .contexto {
@@ -67,3 +71,9 @@ section {
 .contexto h3 {
     font-family: offside;
 }
+
+.contexto {
+    animation: chamada 5s ease-out; animation-iteration-count: 1;
+}
+
+@keyframes chamada {from { transform: rotate(5deg); margin-top: 50px; } to { transform: rotate(0deg); margin-top: 20px; }}
