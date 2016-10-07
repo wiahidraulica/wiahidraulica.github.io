@@ -11,7 +11,37 @@ nav {
     height: 50px;
 }
 
-.brand img {
-    height: 100%;
-    width: 100%;
+.brand a {
+    font-family: offside;
+    font-size: 36px;
+    font-weight: bold;
+    color: #001744;
+}
+
+.menu ul li{
+    display: inline-block;
+    padding: 10px;
+    font-family: offside;
+    font-weight: bold;
+    font-size: 18px;
+    color: #619193;
+}
+
+.menu ul li a{
+    color: #619193;
+}
+
+@media screen and ( max-width: 700px ) {
+    nav { height: auto; }
+    .brand { text-align: center; }
+    .menu ul { text-align: center; }
+}
+
+footer {
+    font-family: arial;
+    text-align: center;
+    padding: 20px;
+    border-top: 8px solid #619193;
+    background: #001744;
+    color: white;
 }
