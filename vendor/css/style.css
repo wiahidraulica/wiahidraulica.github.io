@@ -13,7 +13,7 @@ nav {
 
 .brand a {
     font-family: offside;
-    font-size: 36px;
+    font-size: 3.65rem;
     font-weight: bold;
     color: #001744;
 }
@@ -23,7 +23,7 @@ nav {
     padding: 10px;
     font-family: offside;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 1.60rem;
     color: #619193;
 }
 
@@ -31,10 +31,11 @@ nav {
     color: #619193;
 }
 
-@media screen and ( max-width: 700px ) {
+@media screen and ( max-width: 1050px ) {
     nav { height: auto; }
     .brand { text-align: center; }
     .menu ul { text-align: center; }
+    .menu ul li { font-size: 14px; }
 }
 
 footer {
@@ -44,4 +45,25 @@ footer {
     border-top: 8px solid #619193;
     background: #001744;
     color: white;
+
+}
+
+section {
+    background: #619193;;
+}
+
+.contexto {
+    padding: 20px;
+    font-family: arial;
+    font-size: 16px;
+    text-align: justify;
+    background: white;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.contexto h3 {
+    font-family: offside;
 }
