@@ -56,11 +56,7 @@ footer {
     background: #001744; color: white;
 }
 
-.contexto {
-    padding: 20px;
-    font-family: arial;
-    font-size: 16px;
-    text-align: justify;
+.contexto {    
     background: white;
     color: #333;
     margin-top: 20px;
@@ -68,12 +64,33 @@ footer {
     border-radius: 5px;
 }
 
+.contexto p {
+    padding: 5px 10px;
+    font-family: arial;
+    font-size: 16px;
+    text-align: justify;
+}
+
 .contexto h3 {
     font-family: offside;
+}
+
+.contato {
+    padding: 20px 0;
+}
+
+.contato h5 {
+    font-family: offside;
+    font-size: 18px;
+}
+
+.contato h5 span{
+    font-family: arial;
+    font-size: 16px;
 }
 
 .contexto {
     animation: chamada 5s ease-out; animation-iteration-count: 1;
 }
 
-@keyframes chamada {from { transform: rotate(5deg); margin-top: 50px; } to { transform: rotate(0deg); margin-top: 20px; }}
+@keyframes chamada {from { transform: rotate(4deg); margin-top: 50px; } to { transform: rotate(0deg); margin-top: 20px; }}
