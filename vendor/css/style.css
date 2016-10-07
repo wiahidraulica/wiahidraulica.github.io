@@ -1,0 +1,17 @@
+body {
+    margin:0;
+}
+
+header img{
+    height: 400px;
+    width: 100%;
+}
+
+nav {
+    height: 50px;
+}
+
+.brand img {
+    height: 100%;
+    width: 100%;
+}
