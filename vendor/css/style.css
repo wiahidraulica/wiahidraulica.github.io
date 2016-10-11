@@ -9,7 +9,15 @@ header img{
 }
 
 .servico {
-    padding: 10px 50px;
+    padding: 10px 50px 0 30px;
+}
+
+.servico-esq p{
+    margin-left:30%;
+}
+
+.servico-dir p{
+    margin-right:30%;
 }
 
 .servico-esq {
