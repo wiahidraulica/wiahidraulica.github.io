@@ -1,5 +1,6 @@
 body {
     margin:0;
+    margin-top: 50px
 }
 
 header img{
@@ -7,8 +8,22 @@ header img{
     width: 100%;
 }
 
+.servico {
+    padding: 10px 50px;
+}
+
+.servico-esq {
+    transform: rotate(-4deg);
+}
+
+.servico-dir {
+    transform: rotate(4deg);
+}
+
 nav {
     height: 50px;
+    background: white;
+    box-shadow: 1px 1px 4px #333;
 }
 
 .brand a {

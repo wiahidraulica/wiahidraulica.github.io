@@ -11,11 +11,11 @@
     <link href="vendor/css/font-awesome.min.css" rel="stylesheet">
     <link href="vendor/css/style.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Offside" rel="stylesheet">
-
+      
   </head>
-  <body>
+  <body data-spy="scroll" data-target=".menu-navegacao" data-offset="80">
     
-    <nav class="row">
+    <nav class="row navbar navbar-fixed-top" id="menu-navegacao">
         <div class="col-md-3 brand">
             <a href="#">WIA HIDRÁULICA</a>
         </div>
@@ -25,6 +25,9 @@
                 <li><i class="fa fa-whatsapp fa-lg"></i> (31) 9 9999-9999</li>
                 <li><a href="https://www.facebook.com/wiahidraulica/" target="_blank"><i class="fa fa-facebook fa-lg"></i></a></li>
                 <li><img src="vendor/img/email_social_10679.png"></li>
+                <li><a class="" href="#servicos">Serviços</a></li>
+                <li><a class="" href="#institucional">Institucional</a></li>
+                <li><a class="" href="#contato">Contato</a></li>
             </ul>
         </div>
     </nav>
@@ -33,7 +36,7 @@
         <img src="vendor/img/banner.jpg" />  
     </header>
       
-    <section class="row contextN">
+    <section class="row contextS">
         <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 contexto">
         
             <h3 class="text-center">INTRODUÇÃO</h3>
@@ -49,7 +52,40 @@
         </div>
       </section>
       
-      <section class="row contextS">
+      <section class="row contextN" id="servicos">
+        <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 contexto">
+        
+            <h3 class="text-center">SERVIÇOS</h3><br><br>
+
+            <div class="row servico">
+                <img src="vendor/img/aquecimento.png" class="pull-left img-thumbnail servico-esq">
+                <h3 class="text-center">Aquecimento</h3>
+            </div>
+            
+            <div class="row servico">
+                <img src="vendor/img/ar-comprimido.png" class="pull-right img-thumbnail servico-dir">
+                <h3 class="text-center">Ar Comprimido</h3>
+            </div>
+            
+            <div class="row servico">
+                <img src="vendor/img/geral.png" class="pull-left img-thumbnail servico-esq">
+                <h3 class="text-center">Geral</h3>
+            </div>
+            
+            <div class="row servico">
+                <img src="vendor/img/incendio.png" class="pull-right img-thumbnail servico-dir">
+                <h3 class="text-center">Incêndio</h3>
+            </div>
+            
+            <div class="row servico">
+                <img src="vendor/img/tubula%C3%A7%C3%A3o-gas.png" class="pull-left img-thumbnail servico-esq">
+                <h3 class="text-center">Tubulação de Gás</h3>
+            </div>
+
+        </div>
+      </section>
+      
+      <section class="row contextS" id="institucional">
         <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 contexto">
             
             <h3 class="text-center">MISSÃO</h3>
@@ -74,7 +110,7 @@
         </div>
     </section>
       
-    <section class="row contextN">
+    <section class="row contextN" id="contato">
         <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 contexto contato">
 
             <h3 class="text-center">CONTATO</h3>
@@ -137,5 +173,19 @@
 
     <script src="vendor/js/jquery.min.js"></script>
     <script src="vendor/js/bootstrap.min.js"></script>
+      
+    <script type="text/javascript">
+      
+        $(function(){
+	$('#menu-navegacao a').click(function(){
+		if(location.pathname.replace(/^\//,'')==this.pathname.replace(/^\//,'')&&location.hostname==this.hostname){
+			var target=$(this.hash);target=target.length?target:$('[name='+this.hash.slice(1)+']');if(target.length){
+				$('html,body').animate({scrollTop:target.offset().top},1000);return false;
+				}
+				}});
+				});
+        
+    </script>
+      
   </body>
 </html>
