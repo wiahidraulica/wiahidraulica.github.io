@@ -1,6 +1,6 @@
 body {
     margin:0;
-    margin-top: 50px
+    padding: 0;
 }
 
 header img{
@@ -31,7 +31,9 @@ header img{
 nav {
     height: 50px;
     background: white;
-    box-shadow: 1px 1px 4px #333;
+    box-shadow: 1px 1px 1px #333;
+    margin-bottom: -20px;
+    position: relative;
 }
 
 .brand a {
@@ -68,7 +70,6 @@ footer {
     border-top: 8px solid #619193;
     background: #001744;
     color: white;
-
 }
 
 .contextS {
@@ -96,6 +97,7 @@ footer {
 
 .contexto h3 {
     font-family: offside;
+    margin-top: 70px;
 }
 
 .contato {
